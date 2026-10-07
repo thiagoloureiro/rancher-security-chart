@@ -13,6 +13,27 @@ entries:
       catalog.cattle.io/ui-component: plugins
       catalog.cattle.io/ui-extensions-version: '>= 3.0.0 < 4.0.0'
     apiVersion: v2
+    appVersion: 0.1.2
+    created: "2026-10-07T03:51:08.873054791Z"
+    description: Shows Trivy image vulnerability counts on Rancher workloads
+    digest: 1be7b36e10ce4c89e01305828ba23f46f6de09e6857fb46f6bacfd706a608bb2
+    name: rancher-vulnerability-ui
+    type: application
+    urls:
+    - assets/rancher-vulnerability-ui/rancher-vulnerability-ui-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Image Vulnerabilities
+      catalog.cattle.io/kube-version: '>= 1.25.0-0'
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+      catalog.cattle.io/ui-extensions-version: '>= 3.0.0 < 4.0.0'
+    apiVersion: v2
     appVersion: 0.1.1
     created: "2026-10-07T03:43:43.134677272Z"
     description: Shows Trivy image vulnerability counts on Rancher workloads
@@ -43,4 +64,4 @@ entries:
     urls:
     - assets/rancher-vulnerability-ui/rancher-vulnerability-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-07T03:43:43.134394705Z"
+generated: "2026-10-07T03:51:08.872185257Z"
