@@ -14,6 +14,9 @@ Cluster Explorer also has **Container Security → Vulnerabilities**, with total
 
 A browser refresh loads the latest `VulnerabilityReport` objects. It does not start a new Trivy scan. Trivy Operator updates reports on its own schedule.
 
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff)](#)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e8b823291cd140eeb16ed7befe30f6ed)](https://app.codacy.com/gh/thiagoloureiro/rancher-security-chart/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 ## Screenshots
 
 The extension installed from the Rancher Extensions page:
