@@ -1,0 +1,26 @@
+name: Build and Release Extension Charts
+
+# Publishes the Helm repo that Rancher installs, the same way AlertHawk.Chart
+# is served from GitHub Pages. The release tag must be
+# <pkg folder>-<pkg version>, for example rancher-vulnerability-ui-0.1.0.
+# The gh-pages branch must already exist.
+
+on:
+  workflow_dispatch:
+  release:
+    types: [released]
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+
+jobs:
+  build-extension-charts:
+    uses: rancher/dashboard/.github/workflows/build-extension-charts.yml@master
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      target_branch: gh-pages
+      tagged_release: ${{ github.ref_name }}
