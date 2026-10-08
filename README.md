@@ -85,7 +85,7 @@ image:
 managedBy: Helm
 nameOverride: ''
 nodeCollector:
-  excludeNodes: null
+  excludeNodes: kubernetes.io/hostname=aks-lt01signoz-42804186-vmss000000
   imagePullSecret: null
   registry: ghcr.io
   repository: aquasecurity/node-collector
@@ -149,7 +149,7 @@ operator:
   batchDeleteDelay: 10s
   batchDeleteLimit: 10
   builtInServerRegistryInsecure: false
-  builtInTrivyServer: false
+  builtInTrivyServer: true
   cacheReportTTL: 120h
   clusterComplianceEnabled: true
   clusterSbomCacheEnabled: false
@@ -159,7 +159,7 @@ operator:
   exposedSecretScannerEnabled: true
   httpProxy: null
   httpsProxy: null
-  infraAssessmentScannerEnabled: true
+  infraAssessmentScannerEnabled: false
   labels: {}
   leaderElectionId: trivyoperator-lock
   logDevMode: false
@@ -183,7 +183,7 @@ operator:
   sbomGenerationEnabled: true
   scanJobTTL: ''
   scanJobTimeout: 5m
-  scanJobsConcurrentLimit: 1
+  scanJobsConcurrentLimit: 3
   scanJobsRetryDelay: 30s
   scanNodeCollectorLimit: 1
   scanSecretTTL: ''
@@ -239,7 +239,7 @@ serviceMonitor:
   labels: {}
   namespace: null
 targetNamespaces: >-
-  alerthawk,traefik,clickhouse,cert-manager,cattle-system
+  alerthawk,traefik
 targetWorkloads: pod,replicaset,replicationcontroller,statefulset,daemonset,cronjob,job
 tolerations: []
 trivy:
@@ -321,7 +321,7 @@ trivy:
   skipDirs: null
   skipFiles: null
   skipJavaDBUpdate: false
-  slow: true
+  slow: false
   sslCertDir: null
   storageClassEnabled: true
   storageClassName: ''
