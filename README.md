@@ -85,7 +85,7 @@ image:
 managedBy: Helm
 nameOverride: ''
 nodeCollector:
-  excludeNodes: kubernetes.io/hostname=aks-lt01signoz-42804186-vmss000000
+  excludeNodes: {}
   imagePullSecret: null
   registry: ghcr.io
   repository: aquasecurity/node-collector
