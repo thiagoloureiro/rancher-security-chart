@@ -1,5 +1,11 @@
 # Image Vulnerabilities for Rancher
 
+[![version](https://img.shields.io/github/package-json/v/thiagoloureiro/rancher-security-chart?filename=pkg%2Francher-vulnerability-ui%2Fpackage.json&label=version)](https://github.com/thiagoloureiro/rancher-security-chart/releases)
+[![charts](https://img.shields.io/github/actions/workflow/status/thiagoloureiro/rancher-security-chart/build-extension-charts.yml?event=release&label=charts)](https://github.com/thiagoloureiro/rancher-security-chart/actions/workflows/build-extension-charts.yml)
+[![catalog](https://img.shields.io/github/actions/workflow/status/thiagoloureiro/rancher-security-chart/build-extension-catalog.yml?event=release&label=catalog)](https://github.com/thiagoloureiro/rancher-security-chart/actions/workflows/build-extension-catalog.yml)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff)](#)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e8b823291cd140eeb16ed7befe30f6ed)](https://app.codacy.com/gh/thiagoloureiro/rancher-security-chart/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 Rancher UI extension that shows image vulnerability counts on workload lists. It targets Rancher 2.10 or newer.
 
 The extension does not scan images. [Trivy Operator](https://github.com/aquasecurity/trivy-operator) scans the cluster and writes `VulnerabilityReport` resources. This extension reads those reports through the Kubernetes API that Rancher already proxies.
@@ -13,9 +19,6 @@ The column shows critical, high, and medium counts. A scan with none of those fi
 Cluster Explorer also has **Container Security → Vulnerabilities**, with totals for the current namespace filter and the same workloads.
 
 A browser refresh loads the latest `VulnerabilityReport` objects. It does not start a new Trivy scan. Trivy Operator updates reports on its own schedule.
-
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff)](#)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e8b823291cd140eeb16ed7befe30f6ed)](https://app.codacy.com/gh/thiagoloureiro/rancher-security-chart/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Screenshots
 
