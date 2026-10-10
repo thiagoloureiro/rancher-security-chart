@@ -9,6 +9,7 @@
       "DOM"
     ],
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "allowJs": true,
     "sourceMap": false,
     "strict": true,
@@ -31,7 +32,6 @@
     ],
     "types": [
       "@types/node",
-      "cypress",
       "rancher",
       "shell"
     ]
