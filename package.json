@@ -1,12 +1,12 @@
 {
   "name": "rancher-vulnerability-ui",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "private": false,
   "engines": {
     "node": ">=24"
   },
   "dependencies": {
-    "@rancher/shell": "^3.0.13"
+    "@rancher/shell": "^3.0.14"
   },
   "resolutions": {
     "@types/node": "~25.3.0",
