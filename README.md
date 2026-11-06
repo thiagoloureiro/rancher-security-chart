@@ -271,7 +271,7 @@ trivy:
     pullPolicy: IfNotPresent
     registry: mirror.gcr.io
     repository: aquasec/trivy
-    tag: 0.75.0
+    tag: 0.76.2
   imageScanCacheDir: /tmp/trivy/.cache
   includeDevDeps: false
   insecureRegistries: {}
