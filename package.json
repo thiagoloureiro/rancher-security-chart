@@ -1,6 +1,6 @@
 {
   "name": "rancher-vulnerability-ui",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "private": false,
   "engines": {
     "node": ">=24"
@@ -10,7 +10,8 @@
   },
   "resolutions": {
     "@types/node": "~25.3.0",
-    "@types/lodash": "4.17.5"
+    "@types/lodash": "4.17.5",
+    "@vue/cli-service": "5.0.9"
   },
   "scripts": {
     "dev": "NODE_ENV=dev ./node_modules/.bin/vue-cli-service serve",
